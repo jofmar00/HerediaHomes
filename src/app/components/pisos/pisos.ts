@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Piso } from '../piso/piso';
 
 @Component({
   selector: 'app-pisos',
-  imports: [],
+  imports: [Piso],
   templateUrl: './pisos.html',
   styleUrl: './pisos.scss'
 })

@@ -1,40 +1,9 @@
-.header {
+.bg-orange {
     background-color: #D98721;
-    padding: 1rem 4rem;
-
-    &__titulo {
-        font-family: "Raleway", sans-serif;
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        color: white;
-        font-weight: 400;
-        font-size: 1.5rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__contenido {
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__contact {
-        display: flex;
-        flex-direction: row;
-        gap: 1.25rem;
-        align-items: center;
-    }
-    
 }
 
-.app-nav{
-    &__item {
-        font-size: 1.1rem;
-        color: white;
-        margin-right: 1.25rem;
-        text-decoration: none;
-    }
+.navbar,
+.navbar .navbar-nav .nav-link,
+.navbar-brand {
+    color: #fff !important;
 }

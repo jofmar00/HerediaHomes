@@ -1,0 +1,54 @@
+<div class="card" style="width: 25rem;">
+    <!-- Carrousell -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Pisos/piso1.jpg" class="d-block w-100" height="200px" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Pisos/piso2.webp" class="d-block w-100" height="200px" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Pisos/piso3.webp" class="d-block w-100" height="200px" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- -->
+    <div class="card-body">
+        <h5 class="card-title"> {{type}} </h5>
+        <div class="text-muted">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4 mr-1"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+             {{location}}
+        </div>
+        <div class="fs-2 fw-bold text-center text-primary mb-2">{{ price | number:'1.0-0'}} €</div>
+        <div class="text-muted">{{description}}</div> 
+        <div class="d-flex flex-row justify-content-evenly">
+            <!--Habitaciones-->
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bed h-4 w-4"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg>
+                {{rooms}}
+            </div>
+            <!-- Baños -->
+            <div> 
+                <svg xmlns="http://www.w4.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bath h-4 w-4"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path><line x1="10" x2="8" y1="5" y2="7"></line><line x1="2" x2="22" y1="12" y2="12"></line><line x1="7" x2="7" y1="19" y2="21"></line><line x1="17" x2="17" y1="19" y2="21"></line></svg>
+                {{bathrooms}}
+            </div>
+            <!-- Metros cuadrados -->
+            <div> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square h-4 w-4"><rect width="18" height="18" x="3" y="3" rx="2"></rect></svg>
+                {{sq_meters}}m²
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary ms-3 me-3 mb-3"> Ver Detalles </button>
+</div>
