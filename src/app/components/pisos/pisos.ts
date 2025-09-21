@@ -63,41 +63,6 @@ export class Pisos {
       price: 120_000,
       sq_meters: 40
     },
-    {
-      title: 'Piso',
-      description: 'Piso con vistas al parque',
-      location: 'Parque Grande',
-      bathrooms: 2,
-      rooms: 3,
-      price: 290_000,
-      sq_meters: 90
-    },
-    {
-      title: 'Loft',
-      description: 'Loft de diseño en edificio histórico',
-      location: 'Casco Antiguo',
-      bathrooms: 1,
-      rooms: 1,
-      price: 180_000,
-      sq_meters: 55
-    },
-    {
-      title: 'Piso',
-      description: 'Piso reformado con balcón',
-      location: 'Las Fuentes',
-      bathrooms: 1,
-      rooms: 2,
-      price: 160_000,
-      sq_meters: 60
-    },
-    {
-      title: 'Chalet',
-      description: 'Chalet independiente con jardín',
-      location: 'Montecanal',
-      bathrooms: 3,
-      rooms: 5,
-      price: 500_000,
-      sq_meters: 200
-    }
+
   ]
 }

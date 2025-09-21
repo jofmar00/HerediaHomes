@@ -5,9 +5,9 @@
     <div class="pisos">
         @for (piso of pisos; track $index) {
             <app-piso [bathrooms]="piso.bathrooms" [description]="piso.description"
-                    [location]="piso.location" [price]="piso.price" [rooms]="piso.rooms"
-                    [sq_meters]="piso.sq_meters"
-                    ></app-piso>
+                [location]="piso.location" [price]="piso.price" [rooms]="piso.rooms"
+                [sq_meters]="piso.sq_meters">
+            </app-piso>
         }
     </div>
 </div>
