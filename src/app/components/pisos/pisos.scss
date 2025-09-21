@@ -1,0 +1,8 @@
+.pisos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;         // separación entre cards
+  justify-content: center; // centra las cards en el contenedor
+  align-items: stretch;    // todas las cards con la misma altura
+  padding-bottom: 2rem;    // espacio inferior
+}

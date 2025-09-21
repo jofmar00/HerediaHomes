@@ -1,7 +1,13 @@
 <div class="container-fluid">
 
-    <h2 class="text-center mt-4 mb-4">Nuestras propiedades</h2>
+    <h1 class="text-center mt-4 mb-4">Nuestras propiedades</h1>
 
-    <app-piso type="Piso" description="Hermoso piso completamente reformado" location="Romareda"
-                [bathrooms]="2" [rooms]="4" [sq_meters]="120" [price]="400000"></app-piso>
+    <div class="pisos">
+        @for (piso of pisos; track $index) {
+            <app-piso [bathrooms]="piso.bathrooms" [description]="piso.description"
+                    [location]="piso.location" [price]="piso.price" [rooms]="piso.rooms"
+                    [sq_meters]="piso.sq_meters"
+                    ></app-piso>
+        }
+    </div>
 </div>
