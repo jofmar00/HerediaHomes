@@ -1,0 +1,45 @@
+.piso-detail {
+    width: 60vw;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2rem;
+
+    &__back {
+    background-color: #fcf3ea;
+
+    }
+
+    &__carousel {
+        align-self: center;
+        width: 50vw;
+    }
+    &__title {
+        margin-top: 1rem;
+        font-size: 2rem;           /* text-5xl */
+        font-weight: bold;
+        line-height: 1.2;          /* leading-tight */
+        color: #111827;            /* text-gray-900 */
+    }
+
+    &__subtitle {
+        font-size: 1.5rem; /* text-2xl */
+        color: #374151;    /* text-gray-700 */
+    }
+
+    &__price {
+        color: #1a237e;
+        font-weight: 700;
+        font-size: 1.5rem; /* text-2xl */
+    }
+
+    &__trait {
+        font-size: 1.2rem;
+        color: #374151;    /* text-gray-700 */
+    }
+    &__description {
+
+    }
+}
